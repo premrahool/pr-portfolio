@@ -1,0 +1,127 @@
+/* Poppins Font  */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+/* Montserrat Font  */
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+  /* General  */
+ body {background-color:#000;font-family: 'Poppins', sans-serif;}
+ /* common css */
+.myBTN { background-color: #fff; border-radius: 10px; color: #6e8fec; padding: 10px 35px;min-width: 175px;font-size: 15px; font-weight: 500; margin: 0 2px;}
+.myBTN1 { background-color: #fff; border-radius: 10px; color: #6e8fec; padding: 10px 35px;min-width: 175px;font-size: 15px; font-weight: 500; margin: 0 2px;}
+.myBTN:hover, .myBTN:focus, .myBTN:active,.myBTN1:hover, .myBTN1:focus, .myBTN1:active { background-color: #DCE189; border-color: #006D8D; color: #fff;
+}
+.myBTN-join { background-color: #006D8D; border: none; color: #fff;  padding: 10px 0px;    min-width: 100px;    border-radius:2px;font-size: 13px; margin: 0 2px; }
+
+.relative {position:relative;}
+.no-border {border: none;}
+.width100 {width: 100%;}
+.mt-0 {margin-top:0px;}
+.mt-10 {margin-top:10px;}
+.mt-20 {margin-top:20px;}
+.mt-30 {margin-top:30px;}
+.mt-40 {margin-top:40px;}
+.mb-0 {margin-bottom:0px;}
+.mb-10 {margin-bottom:10px;}
+.mb-20 {margin-bottom:20px;}
+.mb-30 {margin-bottom:30px;}
+.mb-40{margin-bottom:40px;}
+.overflowhide{overflow: hidden;}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.header{font-size: 35px;color: #000; font-weight: 600;}
+.header1{font-size: 45px;margin-bottom: 15px; color: #00668D; font-weight: 600;}
+.text-para{font-size: 17px;line-height: 30px;margin-bottom:20px; font-weight: 500;}
+
+/* Navbar  */
+.mainNavbar {background-image: linear-gradient(90deg,#262626,#262626,#495128,#495128);padding: 1px 0;position: sticky;top: 0;z-index: 9999;}
+.mainNavbar .navbar .nav-item .nav-link {color: #fff; font-size: 16px;font-weight: 500;padding: 1px 35px;}
+.mainNavbar .navbar .nav-item .nav-link:hover{color: #DCE189;}
+.mainNavbar .logo_main{height: 50px;}
+
+/* About  */
+.aboutme{padding-top: 120px;padding-bottom: 120px; background-image: url(../image/banner.jpg);background-repeat: no-repeat;background-size: cover;}
+.mgn{margin-right:15px ;}
+.text-position{text-align: left;}
+.img-bg{height: 350px;width: 350px;border-radius: 50%;border: 18px solid #444;box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);}
+.aboutme{background-color: #222;}
+.aboutme .txtclr{color: #0b5ed7;font-weight: 500;}
+.aboutme .head{color: #fff;font-size: 22px; font-weight: 400;padding-bottom: 8px;margin: 0;}
+.aboutme .head-name{color:#6e8fec; padding-bottom: 8px;font-size: 40px; font-weight: 600;}
+.aboutme .detail-para{color: #fff;padding-bottom: 10px; font-size: 16px;}
+.aboutme .img1{height: 100px;position: absolute;top: 65%;right: 15%;}
+.aboutme .img2{height: 100px;position: absolute;top: 35%;right: 38%;}
+.aboutme .img3{height: 100px;position: absolute;top: 35%;right: 14%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* / ---------- Media ---------- / */
+/* / ##Device = Desktops, ##Screen = 1281px to higher resolution desktops / */
+@media (min-width:1281px){
+
+}
+/* / ##Device = Laptops, Desktops, ##Screen = B/w 1025px to 1280px / */
+@media (min-width:1025px) and (max-width:1280px){
+
+}
+/* / ##Device = Tablets, Ipads (portrait), ##Screen = B/w 768px to 1024px / */
+@media (min-width:768px) and (max-width:1024px){
+
+}
+/* / ##Device = Tablets, Ipads (landscape), ##Screen = B/w 768px to 1024px / */
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape){
+
+}
+/* / ##Device = Low Resolution Tablets, Mobiles (Landscape), ##Screen = B/w 481px to 767px / */
+@media (min-width:481px) and (max-width:767px){
+
+}
+/* / ##Device = Most of the Smartphones Mobiles (Portrait), ##Screen = B/w 320px to 479px / */
+@media (min-width:320px) and (max-width:480px){
+    .aboutme .img1 {
+        height: 70px;
+        position: absolute;
+        top: 120%;
+        right: 10%;
+    }
+    .aboutme .img2 {
+        height: 70px;
+        position: absolute;
+        top: 90%;
+        right: 75%;
+    }
+    .aboutme .img3 {
+        height: 70px;
+        position: absolute;
+        top: 90%;
+        right: 5%;
+    }
+
+ }
