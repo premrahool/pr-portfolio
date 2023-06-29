@@ -1,14 +1,15 @@
 /* Poppins Font  */
-  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 /* Montserrat Font  */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-  /* General  */
- body {background-color:#000;font-family: 'Poppins', sans-serif;}
+body {background-color:#000;font-family: 'Poppins', sans-serif;}
  /* common css */
 .myBTN { background-color: #fff; border-radius: 10px; color: #6e8fec; padding: 10px 35px;min-width: 175px;font-size: 15px; font-weight: 500; margin: 0 2px;}
-.myBTN1 { background-color: #fff; border-radius: 10px; color: #6e8fec; padding: 10px 35px;min-width: 175px;font-size: 15px; font-weight: 500; margin: 0 2px;}
+.myBTN1 { background-color: #DCE189; border-radius: 10px; color: #fff; padding: 10px 35px;min-width: 175px;font-size: 15px; font-weight: 500; margin: 0 2px;}
 .myBTN:hover, .myBTN:focus, .myBTN:active,.myBTN1:hover, .myBTN1:focus, .myBTN1:active { background-color: #DCE189; border-color: #006D8D; color: #fff;
+}
+.myBTN1:hover, .myBTN1:focus, .myBTN1:active,.myBTN1:hover, .myBTN1:focus, .myBTN1:active { background-color: #fff; border-color: #fff; color: #6e8fec;
 }
 .myBTN-join { background-color: #006D8D; border: none; color: #fff;  padding: 10px 0px;    min-width: 100px;    border-radius:2px;font-size: 13px; margin: 0 2px; }
 
@@ -31,29 +32,52 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-.header{font-size: 35px;color: #000; font-weight: 600;}
-.header1{font-size: 45px;margin-bottom: 15px; color: #00668D; font-weight: 600;}
-.text-para{font-size: 17px;line-height: 30px;margin-bottom:20px; font-weight: 500;}
+.header{font-size: 45px;color: #00668D; font-weight: 600;}
+.header1{font-size: 35px;color: #000; font-weight: 600;}
+.text-para{font-size: 17px;line-height: 30px;font-weight: 500;}
 
-/* Navbar  */
-.mainNavbar {background-image: linear-gradient(90deg,#262626,#262626,#495128,#495128);padding: 1px 0;position: sticky;top: 0;z-index: 9999;}
+
+/******************* Navbar  ********************/
+
+.stickyHead,.mainNavbar{ position: fixed;width: 100%;}
+/* .mainNavbar {background-image: linear-gradient(90deg,#262626,#262626,#495128,#495128);padding: 1px 0;position: sticky;top: 0;z-index: 9999;} */
 .mainNavbar .navbar .nav-item .nav-link {color: #fff; font-size: 16px;font-weight: 500;padding: 1px 35px;}
 .mainNavbar .navbar .nav-item .nav-link:hover{color: #DCE189;}
 .mainNavbar .logo_main{height: 50px;}
+.mainNavbar.stickyHead { background-color: #fff;z-index:9999;background-image: linear-gradient(90deg,#262626,#262626,#495128,#495128)}
+.bannerWrap {padding-top: 110px;}
 
-/* About  */
-.aboutme{padding-top: 120px;padding-bottom: 120px; background-image: url(../image/banner.jpg);background-repeat: no-repeat;background-size: cover;}
+/******************* aboutmain  ********************/
+.aboutmain{padding-top: 0px;padding-bottom: 120px; background-image: url(../image/profile/banner.jpg);background-repeat: no-repeat;background-size: cover;}
 .mgn{margin-right:15px ;}
 .text-position{text-align: left;}
 .img-bg{height: 350px;width: 350px;border-radius: 50%;border: 18px solid #444;box-shadow: 0 0 25px 0 rgb(0 0 0 / 80%);}
-.aboutme{background-color: #222;}
-.aboutme .txtclr{color: #0b5ed7;font-weight: 500;}
-.aboutme .head{color: #fff;font-size: 22px; font-weight: 400;padding-bottom: 8px;margin: 0;}
-.aboutme .head-name{color:#6e8fec; padding-bottom: 8px;font-size: 40px; font-weight: 600;}
-.aboutme .detail-para{color: #fff;padding-bottom: 10px; font-size: 16px;}
-.aboutme .img1{height: 100px;position: absolute;top: 65%;right: 15%;}
-.aboutme .img2{height: 100px;position: absolute;top: 35%;right: 38%;}
-.aboutme .img3{height: 100px;position: absolute;top: 35%;right: 14%;}
+.aboutmain{background-color: #222;}
+.aboutmain .txtclr{color: #0b5ed7;font-weight: 500;}
+.aboutmain .head{color: #fff;font-size: 22px; font-weight: 400;padding-bottom: 8px;margin: 0;}
+.aboutmain .head-name{color:#6e8fec; padding-bottom: 8px;font-size: 40px; font-weight: 600;}
+.aboutmain .detail-para{color: #fff;padding-bottom: 10px; font-size: 16px;}
+/* .aboutmain .img1{height: 100px;position: absolute;top: 50%;right: 15%;}
+.aboutmain .img2{height: 100px;position: absolute;top: 20%;right: 38%;}
+.aboutmain .img3{height: 100px;position: absolute;top: 20%;right: 14%;} */
+
+
+/****************** Education  ********************/
+.education {padding-top: 50px; padding-bottom: 50px;}
+.education .heading{font-size: 40px; color: #fff;}
+.education .card{/*background-color: #4e5026;*/ background-image: linear-gradient(144deg,#495128,#262626,#495128,#262626); border: none;margin-left: 10px;}
+.education .card .icon { position: absolute; top: 0;left: 0; width: 100%; height: 100%; background: #0b5ed7;}
+.education .card .icon .fas {position: absolute;top: 50%; left: 50%;transform: translate(-50%, -50%);font-size: 50px;color: #fff;}
+.education  .card .slide {width: 300px;height: 200px;transition: 0.5s;}
+.education .card .slide.slide1 {position: relative;display: flex;justify-content: center;align-items: center; z-index: 1;transition: .7s; transform: translateY(100px);}
+.education .card:hover .slide.slide1{ transform: translateY(0px);}
+.education .card .slide.slide2 { position: relative;display: flex;justify-content: center; align-items: center;padding: 20px; box-sizing: border-box;transition: .8s;transform: translateY(-100px);box-shadow: 0 20px 40px rgba(0,0,0,0.4);}
+.education .card:hover .slide.slide2{transform: translateY(0);}
+.education .card .slide.slide2::after{ content: "";position: absolute;width: 30px;height: 4px; bottom: 15px;left: 50%;left: 50%;transform: translateX(-50%);background: #2c73df;}
+.education  .card .slide.slide2 .content p { margin: 0; padding: 0; text-align: center;
+     color: #fff;}
+.education .card .slide.slide2 .content h3 {margin: 0 0 10px 0;padding: 0;font-size: 24px;text-align: center;color: #fff;} 
+.education .card1:hover {box-shadow: 0px 0px 10px #0b5ed7;}
 
 
 
@@ -105,23 +129,13 @@ input::-webkit-inner-spin-button {
 }
 /* / ##Device = Most of the Smartphones Mobiles (Portrait), ##Screen = B/w 320px to 479px / */
 @media (min-width:320px) and (max-width:480px){
-    .aboutme .img1 {
-        height: 70px;
-        position: absolute;
-        top: 120%;
-        right: 10%;
-    }
-    .aboutme .img2 {
-        height: 70px;
-        position: absolute;
-        top: 90%;
-        right: 75%;
-    }
-    .aboutme .img3 {
-        height: 70px;
-        position: absolute;
-        top: 90%;
-        right: 5%;
-    }
-
+  .mainNavbar{
+    background-image: linear-gradient(90deg,#262626,#262626,#495128,#495128);
+    text-align: center; z-index: 99;
+  }
+  .aboutmain{padding-bottom: 50px;}
+  .aboutmain .head-name{font-size: 30px;}
+  .education .card.mcard {display: flex;align-items: center;margin-bottom: 30px;}
+  .education .heading{margin-bottom: 30px;}
+  .home-img{margin-top: 50px;}
  }
